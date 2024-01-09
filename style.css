@@ -1,0 +1,74 @@
+body {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.cir {
+    margin-top: 160px;
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+   background-color: blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+input {
+    margin-top: 10px;
+    width: 115px;
+    padding: 5px;
+    border-radius: 5px;
+    border-style: none;
+    background-color: rgb(81, 81, 215);
+    color: white;
+    cursor: pointer;
+}
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: black;
+}
+.tran {
+    border-bottom: 100px solid black;
+    border-right: 60px solid transparent;
+    border-left: 60px solid transparent;
+}
+.circul {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: black;
+}
+.reck {
+    width: 140px;
+    height: 70px;
+    background-color: black;
+}
+.hex {
+    width: 100px;
+    height: 58px;
+    position: relative;
+    background-color: black;
+}
+.hex::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: inherit;
+    width: inherit;
+    background-color: black;
+    transform: rotate(60deg);
+}
+.hex::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: inherit;
+    width: inherit;
+    background-color: black;
+    transform: rotate(-60deg);
+}
